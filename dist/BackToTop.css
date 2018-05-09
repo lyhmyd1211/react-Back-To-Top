@@ -1,0 +1,78 @@
+.base-back-to-up{
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 40px;
+  height: 40px;
+}
+
+.rotate-hide {
+  transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  opacity: 0;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+  height: 0px;
+}
+.rotate-show {
+  transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  -webkit-transform: rotate(-360deg);
+  transform: rotate(-360deg);
+  opacity: 1;
+  cursor: pointer;
+}
+
+.fade-hide{
+  transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  opacity: 0;
+  height: 0px;  
+}
+.fade-show{
+  transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.c-animate-hide{
+  opacity: 0;
+  height: 0px;
+}
+.c-animate-show{
+   opacity: 1;
+   cursor: pointer;
+}
+
+.to-top-icon {
+  transform: scale(4);
+  margin-left: 18px;
+  margin-top: 19px;
+}
+
+.to-up-percent {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+.percent-hide{
+  display: none;
+}
+.back-to-up-default{
+  background: url(./up.png)no-repeat;
+  width: 50%;
+  height: 50%;
+  margin-left: 26%;
+}

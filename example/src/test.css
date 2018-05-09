@@ -1,0 +1,15 @@
+.c-animate-hide{
+   transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  transform: translateY(100%)
+}
+.c-animate-show{
+   transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  transform: translateY(0)
+}
+

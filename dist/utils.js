@@ -1,0 +1,53 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.getScrollTop = getScrollTop;
+exports.ScrollToAnimate = ScrollToAnimate;
+exports.getScrollPercent = getScrollPercent;
+/**
+ * 获取当前滚动条所在位置
+ */
+function getScrollTop() {
+  var scrollTop = 0;
+  if (document.documentElement && document.documentElement.scrollTop) {
+    scrollTop = document.documentElement.scrollTop;
+  } else if (document.body) {
+    scrollTop = document.body.scrollTop;
+  }
+  return scrollTop;
+}
+/**
+ * TODO
+ * @param {*} position 滚动到何处
+ * @param {*} step 步长
+ * @param {*} current 滚动条当前位置
+ */
+function ScrollToAnimate(position, step, current) {
+  var start = 0;
+  var timer = setInterval(function () {
+    if (current - start >= position) {
+
+      start += step;
+      if (current - start >= position) {
+        window.scrollTo(0, current - start);
+      } else {
+        window.scrollTo(0, position);
+      }
+    } else {
+      clearInterval(timer);
+    }
+  }, 0);
+}
+/**
+ * 获取滚动条位置百分比
+ */
+function getScrollPercent(offsetTop) {
+  var percent = 0;
+  if (offsetTop < getScrollTop()) {
+    percent = Math.round((getScrollTop() - offsetTop) / (document.body.scrollHeight - offsetTop - window.innerHeight) * 100);
+  }
+  return percent > 100 ? 100 : percent;
+}
+//# sourceMappingURL=utils.js.map
