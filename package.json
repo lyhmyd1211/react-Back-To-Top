@@ -1,7 +1,7 @@
 {
   "name": "react-back-to-top",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "a customizable back-to-top component for react",
   "main": "index.js",
   "files": [
     "dist"
@@ -9,8 +9,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "git repository": "https://github.com/lyhmyd1211/react-Back-To-Top.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lyhmyd1211/react-Back-To-Top.git"
+  },
   "keywords": ["backtotop", "returntop", "back-to-top", "react", "react-back-to-top"],
+  "bugs": {
+    "url": "https://github.com/lyhmyd1211/react-Back-To-Top/issues"
+  },
   "author": "lyhmyd1211",
   "license": "ISC",
   "dependencies": {
