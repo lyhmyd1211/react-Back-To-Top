@@ -79,9 +79,9 @@ mainStyle|Custom component style,You can replace any picture|style object|{}
 percentStyle|Custom 'Percent'component style|style object|{}
 
 
-##1.0.2 updated to support SSR 
+## 1.0.2 updated to support SSR 
 
-##1.0.3 Updated to support custom text blocks .Now you can custom text blocks like this:
+## 1.0.3 Updated to support custom text blocks .Now you can custom text blocks like this:
 
 ```
 <BackToTop
