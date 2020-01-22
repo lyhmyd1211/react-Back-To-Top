@@ -1,4 +1,4 @@
-.base-back-to-up{
+.base-back-to-up {
   position: fixed;
   bottom: 50px;
   right: 50px;
@@ -27,15 +27,15 @@
   cursor: pointer;
 }
 
-.fade-hide{
+.fade-hide {
   transition: all 1s;
   -moz-transition: all 1s;
   -o-transition: all 1s;
   -webkit-transition: all 1s;
   opacity: 0;
-  height: 0px;  
+  height: 0px;
 }
-.fade-show{
+.fade-show {
   transition: all 1s;
   -moz-transition: all 1s;
   -o-transition: all 1s;
@@ -44,35 +44,40 @@
   cursor: pointer;
 }
 
-.c-animate-hide{
+.c-animate-hide {
   opacity: 0;
   height: 0px;
 }
-.c-animate-show{
-   opacity: 1;
-   cursor: pointer;
+.c-animate-show {
+  opacity: 1;
+  cursor: pointer;
 }
 
 .to-top-icon {
+  -webkit-transform: scale(4);
   transform: scale(4);
   margin-left: 18px;
   margin-top: 19px;
 }
 
 .to-up-percent {
-  position: absolute;
+  /* position: absolute; */
   left: 0;
-  top: 20px;
+  /* top: 20px; */
   right: 0;
   margin: 0 auto;
   text-align: center;
 }
-.percent-hide{
+.percent-hide {
   display: none;
 }
-.back-to-up-default{
-  background: url(./up.png)no-repeat;
-  width: 50%;
-  height: 50%;
-  margin-left: 26%;
+.back-to-up-default {
+  width: 100%;
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 6px;
+  text-align: center;
+  line-height: 40px;
+}
+.back-to-up-default-text {
+  color: rgb(25, 137, 250);
 }
