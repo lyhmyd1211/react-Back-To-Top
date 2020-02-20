@@ -78,3 +78,19 @@ animate|Animation when 'Percent' showing or hiding|'fade','rotate','none'|'fade'
 mainStyle|Custom component style,You can replace any picture|style object|{}
 percentStyle|Custom 'Percent'component style|style object|{}
 
+
+## 1.0.2 updated to support SSR 
+
+## 1.0.3 Updated to support custom text blocks .Now you can custom text blocks like this:
+
+```
+<BackToTop
+    animate='rotate'
+    offsetTop={20}
+    step={50}
+    percent={true}
+    visiblePercent={50}
+  >
+  <div>test</div>
+</BackToTop>
+```
