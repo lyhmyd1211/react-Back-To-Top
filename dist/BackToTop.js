@@ -102,7 +102,6 @@ function (_Component) {
         animateShow = animate + '-show';
       }
 
-      console.log('asdasd', this.props, this.props.children);
       return _react["default"].createElement("div", {
         onClick: function onClick() {
           return _this3.scrollToTop();
