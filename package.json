@@ -1,6 +1,6 @@
 {
   "name": "react-back-to-top",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "a customizable back-to-top component for react",
   "main": "index.js",
   "files": [
