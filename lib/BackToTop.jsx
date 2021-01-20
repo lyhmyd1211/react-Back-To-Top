@@ -48,7 +48,6 @@ class BackToTop extends Component {
       animateHide = animate + '-hide';
       animateShow = animate + '-show';
     }
-    console.log('asdasd', this.props, this.props.children);
     return (
       <div
         onClick={() => this.scrollToTop()}
